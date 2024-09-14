@@ -1,0 +1,150 @@
+@use './fonts.scss';
+
+:root {
+    --ff-serif: 'nt_fabulousregular', Times, serif;
+    --ff-sans-serif: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-sans-serif);
+    transition: all 0.4s ease-in-out;
+    color: rgb(0 0 0 / 0.6);
+}
+
+
+h1 {
+    font-family: var(--ff-serif);
+    font-size: 4.6rem;
+    color: rgb(0 0 0 / 0.5);
+
+    @media screen and (width < 60em){
+        font-size: 14vw;
+    }
+    
+    span {
+        font-family: var(--ff-serif);
+        margin-left: 6rem;
+        color: rgb(0 0 0 / 0.5);
+    }
+}
+
+h2 {
+    font-family: var(--ff-serif);
+    font-size: 2rem;
+    color: rgb(0 0 0 / 0.5);
+
+    @media screen and (width < 60em){
+        font-size: 7vw;
+        margin-top: 20px;
+    }
+}
+
+p {
+    color: rgb(0 0 0 / 0.6);
+    line-height: 1.8;
+}
+
+a {
+    font-family: var(--ff-sans-serif);
+    color: rgb(255 168 112);
+    text-decoration: none;
+
+    &.cta-download {
+        display: inline-block;
+        font-size: 0.75rem;
+        border: 1px solid rgb(255 168 112);
+        padding: 8px 40px;
+        text-transform: uppercase;
+    
+        &:hover {
+            background-color: rgb(0 0 0 / 0.6);
+            border: 1px solid rgb(0 0 0 / 0.6);
+            color: white;
+        }
+    }
+}
+
+section {
+    overflow: hidden;
+    position: relative;
+
+    &.content {
+        padding: 60px 0;
+
+        @media screen and (width < 60em){
+            padding: 30px 20px;
+        }
+    }
+
+    &#faq {
+        padding: 60px 0 120px;
+
+        dl {
+            margin-top: 30px;
+
+            dt {
+                font-family: var(--ff-serif);
+                font-size: 1.3rem;
+                color: rgb(0 0 0 / 0.5);
+            }
+            dd {
+                font-family: var(--ff-sans-serif);
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &#hero {
+
+        @media screen and (width < 60em){
+            padding: 40px 0;
+        }
+
+        .simple-logo {
+            display: block;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            line-height: 0.9;
+        }
+
+        .cta-download {
+            margin-top: 20px;
+
+            @media screen and (width < 60em){
+                margin-bottom: 40px;
+            }
+        }
+
+        .hero-image {
+            height: 75vh;
+            background-color: rgb(255 168 112);
+            background-image: url('/assets/images/hero-image.png');
+            background-position: center;
+            background-size: cover;
+            position: relative;
+
+            .cities {
+                position: absolute;
+                right: -150px;
+                bottom: 160px;
+                transform: rotate(90deg);
+                font-size: 0.70rem;
+                color: rgb(0 0 0 / 0.3);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                @media screen and (width < 60em){
+                    display: none;
+                }
+            }
+        }
+    }
+}

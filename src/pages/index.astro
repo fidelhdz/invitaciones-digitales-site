@@ -1,16 +1,100 @@
 ---
-
+import MainLayout from "../layouts/mainLayout.astro";
+import MinimalistLogo from "../svg/minimal-logo.svg";
+import TheLogo from "../svg/logo.svg";
+import SectionContent from "../components/sectionContent.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+	<section id="hero">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-12 col-lg-5">
+					<div class="simple-logo"><img src={MinimalistLogo.src} /></div>
+					<h1>Invitaciones<br><span>Digitales</span></h1>
+					<p class="ml-5">Nuestras invitaciones digitales están diseñadas para reflejar la esencia de el comienzo de su historia de amor o del inicio de tu juventud, con un toque moderno y personalizado. Se adaptan a tu estilo y paleta de colores que combinen a la perfección con la temática de tu evento.</p>
+					<a href="https://vintage-invitaciones.myflodesk.com/d82qtbuyae" target="_blank" class="cta-download">Obten más información</a>
+				</div>
+				<div class="col-12 col-lg-6 hero-image">
+					<div class="cities">Saltillo &mdash; Ramos Arizpe &mdash; Monterrey</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<SectionContent titulo="La puedes ver en cualquier dispositivo" imagen="/assets/images/responsive.png">
+		<Fragment slot="contenido">
+			<p>Nuestras invitaciones digitales son completamente responsivas, lo que significa que se adaptan perfectamente a cualquier pantalla, ya sea que tus invitados las vean en su móvil, tableta o computadora. ¡Siempre lucirán impecables, sin importar dónde las abran!</p>
+		</Fragment>
+	</SectionContent>
+
+	<SectionContent titulo="Diseño y color de acuerdo a la temática" imagen="/assets/images/personalizado.png" ordenInverso>
+		<Fragment slot="contenido">
+			<p>Creamos el diseño perfecto que capture la temática de tu evento. Desde elegantes hasta bohemios, todos nuestros diseños se ajustan a tu paleta de colores para crear una invitación que hable por ti. ¡Cada sección se crea con el estilo de tu evento!</p>
+		</Fragment>
+	</SectionContent>
+
+	<SectionContent titulo="Enlace directo a tu mesa de regalos" imagen="/assets/images/mesa-de-regalos.png">
+		<Fragment slot="contenido">
+			<p>Facilita el proceso para tus invitados con un enlace directo a tu mesa de regalos. Haz que les sea sencillo acceder a la lista de regalos en un solo clic, sin complicaciones ni búsquedas.</p>
+		</Fragment>
+	</SectionContent>
+
+	<SectionContent titulo="Itinerario, confirmación y enlace al mapa" imagen="/assets/images/caracteristicas.png" ordenInverso>
+		<Fragment slot="contenido">
+			<p>Nuestras invitaciones digitales no solo son bellas, también están pensadas para hacer la organización de tu boda más simple y fluida.</p>
+			<p>Incluye características como:</p>
+			<ul>
+				<li><strong>Itinerario de tu evento:</strong> Desde la ceremonia hasta la recepción, tus invitados sabrán qué esperar en todo momento.</li>
+				<li><strong>Confirmación de asistencia vía WhatsApp:</strong> ¡Olvídate de los métodos complicados! Recibe las confirmaciones de asistencia con solo un mensaje.</li>
+				<li><strong>Enlace al mapa de ubicación:</strong> Asegúrate de que todos lleguen sin problemas con un acceso directo al mapa de navegación de tu evento.</li>
+			</ul>
+		</Fragment>
+	</SectionContent>
+
+	<SectionContent titulo="Control de acceso a tu evento" imagen="/assets/images/control-de-acceso.png">
+		<Fragment slot="contenido">
+			<p>Nuestras invitaciones digitales no solo son bellas, también están pensadas para hacer la organización de tu boda más simple y fluida.</p>
+		</Fragment>
+	</SectionContent>
+
+	<SectionContent titulo="Cuenta tu historia de amor" imagen="/assets/images/historia.png" ordenInverso>
+		<Fragment slot="contenido">
+			<p>Deja que tus invitados se enamoren aún más de su gran día al incluir una sección especial que narre su historia de amor. Un pequeño toque de magia que hará tu invitación inolvidable.</p>
+		</Fragment>
+	</SectionContent>
+
+	<SectionContent titulo="Tu dices cuando iniciamos" imagen={ TheLogo.src }>
+		<Fragment slot="contenido">
+			<p>¿Listos para comenzar a planear la invitación perfecta? Descarga la lista completa de las características de nuestras invitaciones digitales y elige la opción ideal para ti.</p>
+			<a href="https://vintage-invitaciones.myflodesk.com/d82qtbuyae" target="_blank" class="cta-download">Obten más información</a>
+		</Fragment>
+	</SectionContent>
+
+	<section id="faq">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-12 col-lg-4">
+					<h2>Preguntas frecuentes</h2>
+					<p>Recuerda que si tu pregunta no se encuentra entre las frecuentes, puedes contactarme vía <a href="https://wa.link/n6zij4" target="_blank">WhatsApp</a>.</p>
+				</div>
+				<div class="col-12 col-lg-7">
+					<dl>
+						<dt>¿Cuanto tiempo tardan en entregarme el enlace?</dt>
+						<dd>Las invitaciones que son realizadas sin control de acceso a tu evento, nos tardamos de 2 a 3 días naturales.</dd>
+						<dt>¿Tiene cuenta regresiva?</dt>
+						<dd>Todas nuestras invitaciones llevan su cuenta regresiva. Asegurate de que cuando entregues la información indicar en que evento u horario, se terminara el conteo. Por defecto el tiempo se termina en el primer evento de ese día.</dd>
+						<dt>¿Puede tener enlace a las mesas de regalo?</dt>
+						<dd>Claro, solo indicanos el enlace a tu mesa o tu número asignado por la tienda y el nombre de la tienda departamental encargada de ello.</dd>
+						<dt>¿Se puede poner mi cuenta bancaria para los regalos en efectivo?</dt>
+						<dd>Sin duda alguna, solo asegura que solo sean datos de depósito para que no se pueda hacer mal uso de tu información.</dd>
+						<dt>¿Hasta cuantas fotos puedo enviar para la galería fotográfica?</dt>
+						<dd>Por ahora, tenemos un máximo de 15 fotografías para la galería. Asegurate, cuando envíes tus fotografías, que sea en multiplos de 3 (3, 6, 9, 12 o 15).</dd>
+						<dt>¿Puedo manejar el contenido de mi invitación?</dt>
+						<dd>Por el momento no, pero estamos trabajando en ello.</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</section>
+</MainLayout>

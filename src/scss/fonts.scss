@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'nt_fabulousregular';
+    src: url('/assets/libraries/fonts/ntfabulous/nt_fabulous-webfont.woff2') format('woff2'),
+         url('/assets/libraries/fonts/ntfabulous/nt_fabulous-webfont.woff') format('woff');
+        //  url('/assets/libraries/fonts/ntfabulous/nt_fabulous-webfont.svg') format('svg'),
+        //  url('/assets/libraries/fonts/ntfabulous/nt_fabulous-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
