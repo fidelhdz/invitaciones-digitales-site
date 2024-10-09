@@ -132,6 +132,10 @@ section {
         .simple-logo {
             display: block;
             margin-bottom: 30px;
+            
+            img {
+                width: 50%;
+            }
 
             @media screen and (width < 60em){
                 text-align: center;
