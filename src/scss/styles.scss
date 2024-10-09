@@ -108,11 +108,12 @@ section {
 
         dl {
             margin-top: 30px;
-
+            
             dt {
                 font-family: var(--ff-serif);
                 font-size: 1.3rem;
                 color: rgb(0 0 0 / 0.5);
+                font-weight: normal;
             }
             dd {
                 font-family: var(--ff-sans-serif);
